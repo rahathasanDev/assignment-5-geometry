@@ -10,7 +10,7 @@
 </head>
 
 
-<body  class="w-11/12 mx-auto p-6">
+<body class="w-11/12 mx-auto p-6">
     <header class="flex justify-between bg-blue-200 mt-5 rounded-lg px-5 py-3">
         <div>
             <h1 class="text-3xl font-bold">Interactive </h1>
@@ -30,7 +30,7 @@
     <!-- card section start -->
     <main class="lg:flex">
         <section class="grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 basis-3/4 gap-2 mt-10">
-            <div class=" text-center p-5 shadow rounded-lg">
+            <div class="cards text-center p-5 shadow rounded-lg">
                 <div><img class="block mx-auto" src="images/triangle.png" alt="">
                 </div>
                 <div class="">
@@ -42,17 +42,19 @@
                     </div>
                 </div>
                 <div class="items-center  gap-3 ">
-                    <input class="border-stone-950 px-3 lg:w-48 w-64 h-10 mb-3 rounded-md bg-gray-100  " type="text"
+                    <input id="input-field1"
+                        class="border-stone-950 px-3 lg:w-48 w-64 h-10 mb-3 rounded-md bg-gray-100  " type="number"
                         placeholder="b">cm
-                    <input class="border-stone-950 px-3  lg:w-48 w-64  h-10 mb-3 rounded-md bg-gray-100" type="text"
+                    <input id="input-field2"
+                        class="border-stone-950 px-3  lg:w-48 w-64  h-10 mb-3 rounded-md bg-gray-100" type="number"
                         placeholder="h">cm
                 </div>
                 <div class="flex justify-center mt-5">
-                    <button id="rectangle-button"
+                    <button id="triangle-button"
                         class="calculate-buttton font-semibold text-2xl text-white px-6 py-2 bg-sky-500 rounded-full  block ">Calculate</button>
                 </div>
             </div>
-            <div class=" text-center p-5 shadow rounded-lg">
+            <div class="cards  text-center p-5 shadow rounded-lg">
                 <div><img class="block mx-auto" src="images/rectangle.png" alt="">
                 </div>
                 <div class="">
@@ -64,9 +66,9 @@
                     </div>
                 </div>
                 <div class="items-center  gap-3 ">
-                    <input class="border-stone-950 px-3 lg:w-48 w-64 h-10 mb-3 rounded-md bg-gray-100  " type="text"
+                    <input class="border-stone-950 px-3 lg:w-48 w-64 h-10 mb-3 rounded-md bg-gray-100  " type="number"
                         placeholder="b">cm
-                    <input class="border-stone-950 px-3  lg:w-48 w-64  h-10 mb-3 rounded-md bg-gray-100" type="text"
+                    <input class="border-stone-950 px-3  lg:w-48 w-64  h-10 mb-3 rounded-md bg-gray-100" type="number"
                         placeholder="h">cm
                 </div>
                 <div class="flex justify-center mt-5">
@@ -75,27 +77,27 @@
                 </div>
             </div>
 
-            <div class=" text-center p-5 shadow rounded-lg">
+            <div class=" cards text-center  p-5 shadow rounded-lg">
                 <div><img class="block mx-auto" src="images/parallelogram.png" alt="">
                 </div>
                 <div class="">
                     <div>
-                        <h2 class="text-3xl pt-2 fw-bold">Parallelogram</h2>
+                        <h2 class="text-3xl pt-2 lg:mt-5 fw-bold">Parallelogram</h2>
                     </div>
                     <div>
-                        <p class="text-2xl pb-2">Area (A) = b * h</p>
+                        <p class="text-2xl lg:mt-5 pb-2">Area (A) = b * h</p>
                     </div>
                 </div>
                 <div class="items-center  gap-3 ">
                     <p class="text-2xl">b=10cm, h=12cm</p>
 
                 </div>
-                <div class="flex justify-center mt-5">
-                    <button id="rectangle-button"
+                <div class="flex justify-center lg:my-16 mt-5">
+                    <button id="parallelogram-button"
                         class="calculate-buttton font-semibold text-2xl text-white px-6 py-2 bg-sky-500  rounded-full  block ">Calculate</button>
                 </div>
             </div>
-            <div class=" text-center p-5 shadow rounded-lg">
+            <div class=" cards text-center p-5 shadow rounded-lg">
                 <div><img class="block mx-auto" src="images/Rhombus.png" alt="">
                 </div>
                 <div class="">
@@ -112,11 +114,11 @@
 
                 </div>
                 <div class="flex justify-center mt-5">
-                    <button id="rectangle-button"
+                    <button id="parallelogram-button"
                         class="calculate-buttton font-semibold text-2xl text-white px-6 py-2 bg-sky-500  rounded-full  block ">Calculate</button>
                 </div>
             </div>
-            <div class=" text-center p-5 shadow rounded-lg">
+            <div class=" cards text-center p-5 shadow rounded-lg">
                 <div><img class="block mx-auto" src="images/pentagon.png" alt="">
                 </div>
                 <div class="">
@@ -132,11 +134,11 @@
 
                 </div>
                 <div class="flex justify-center mt-5">
-                    <button id="rectangle-button"
+                    <button id="pentagon-button"
                         class="calculate-buttton font-semibold text-2xl text-white px-6 py-2 bg-sky-500  rounded-full  block ">Calculate</button>
                 </div>
             </div>
-            <div class=" text-center p-5 shadow rounded-lg">
+            <div class=" cards text-center p-5 shadow rounded-lg">
                 <div><img class="block mx-auto" src="images/ellipse.png" alt="">
                 </div>
                 <div class="">
@@ -152,7 +154,7 @@
 
                 </div>
                 <div class="flex justify-center mt-5">
-                    <button id="rectangle-button"
+                    <button id="ellipse-button"
                         class="calculate-buttton font-semibold text-2xl text-white px-6 py-2 bg-sky-500  rounded-full  block ">Calculate</button>
                 </div>
             </div>
@@ -165,19 +167,20 @@
 
         <section class="mx-auto basis-1/3 mt-5 ml-5">
             <h1 class="text-3xl text-center font-semibold underline ">Area Calculation</h1>
-            <div class="  shadow rounded-lg box-border h-1/3 ">
-                	
-                </div>
+            <div id="outputResult" class=" shadow rounded-lg box-border h-1/3 ">
+
+            </div>
 
 
-          </section>
-<!-- table section end--> 
-          
+        </section>
+        <!-- table section end-->
+
     </main>
 
 
 
     <script src="new-page.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
