@@ -29,12 +29,14 @@
     </header>
     <!-- card section start -->
     <main class="lg:flex">
-        <section class="grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 basis-3/4 gap-2 mt-10">
+        <section class="grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 w-3/4  gap-2 mt-10">
                       
+
+            
                                    <!-- triangle -->
 
 
-            <div class="cards text-center p-5 shadow rounded-lg">
+            <div class="cards text-center p-2  shadow rounded-lg">
                 <div><img class="block mx-auto" src="images/triangle.png" alt="">
                 </div>
                 <div class="">
@@ -59,25 +61,27 @@
                 </div>
             </div>
 
-                         <!-- rectangle -->
-            <div class="cards  text-center p-5 shadow rounded-lg">
+                                  <!-- rectangle -->
+
+
+            <div class="cards  text-center p-2 shadow rounded-lg ">
                 <div><img class="block mx-auto" src="images/rectangle.png" alt="">
                 </div>
                 <div class="">
                     <div>
-                        <h2 class="text-3xl pt-2 fw-bold">Rectangle</h2>
+                        <h2 id="rectangle-tittle" class="text-3xl pt-2 fw-bold">Rectangle</h2>
                     </div>
                     <div>
                         <p class="text-2xl pb-2">Area (A) = w * i</p>
                     </div>
                 </div>
                 <div class="items-center  gap-3 ">
-                    <input id="rectangle-w-input" class="border-stone-950 px-3 lg:w-48 w-64 h-10 mb-3 rounded-md bg-gray-100  " type="number"
+                    <input id="rectangle-input1" class="border-stone-950 px-3 lg:w-48 w-64 h-10 mb-3 rounded-md bg-gray-100  " type="number"
                         placeholder="b">cm
-                    <input id="rectangle-l-input" class="border-stone-950 px-3  lg:w-48 w-64  h-10 mb-3 rounded-md bg-gray-100" type="number"
+                    <input id="rectangle-input2" class="border-stone-950 px-3  lg:w-48 w-64  h-10 mb-3 rounded-md bg-gray-100" type="number"
                         placeholder="h">cm
                 </div>
-                <div class="flex justify-center mt-5">
+                <div class="flex justify-center mt-10 ">
                     <button id="rectangle-button"
                         class="calculate-buttton font-semibold text-2xl text-white px-6 py-2 bg-sky-500  rounded-full  block ">Calculate</button>
                 </div>
@@ -85,32 +89,35 @@
                               <!--parallelogram   --> 
 
 
-            <div class=" cards text-center  p-5 shadow rounded-lg">
+            <div class=" cards text-center  p-2 shadow rounded-lg ">
                 <div><img class="block mx-auto" src="images/parallelogram.png" alt="">
                 </div>
                 <div class="">
                     <div>
-                        <h2 class="text-3xl pt-2 lg:mt-5 fw-bold">Parallelogram</h2>
+                        <h2 id="parallelogram-tittle" class="text-3xl pt-2 lg:mt-5 fw-bold">Parallelogram</h2>
                     </div>
                     <div>
                         <p class="text-2xl lg:mt-5 pb-2">Area (A) = b * h</p>
                     </div>
                 </div>
                 <div class="items-center  gap-3 ">
-                    <p class="text-2xl">b=<span id="parallelogram-base">10</span>cm, h=<span id="parallelogram-height">12</span>cm</p>
+                    <p class="text-2xl">b=<span id="parallelogram-b">10</span>cm, h=<span id="parallelogram-h">12</span>cm</p>
                 </div>
-                <div class="flex justify-center lg:my-16 mt-5">
+                <div class="flex justify-center lg:my-20 mt-5">
                     <button id="parallelogram-button"
                         class="calculate-buttton font-semibold text-2xl text-white px-6 py-2 bg-sky-500  rounded-full  block ">Calculate</button>
                 </div>
             </div>
                                <!-- Rhombus -->
-            <div class=" cards text-center p-5 shadow rounded-lg">
+
+
+
+            <div class=" cards text-center p-2 shadow rounded-lg">
                 <div><img class="block mx-auto" src="images/Rhombus.png" alt="">
                 </div>
                 <div class="">
                     <div>
-                        <h2 class="text-3xl pt-2 fw-bold">Rhombus</h2>
+                        <h2 id="rhombus-tittle" class="text-3xl pt-2 fw-bold">Rhombus</h2>
                     </div>
                     <div>
                         <p class="text-2xl pb-2">Area (A) = 0.5 * d<sub>1</sub>*d<sub>2</sub></p>
@@ -123,7 +130,7 @@
 
                 </div>
                 <div class="flex justify-center mt-5">
-                    <button id="parallelogram-button"
+                    <button id="rhombus-buttton"
                         class="calculate-buttton font-semibold text-2xl text-white px-6 py-2 bg-sky-500  rounded-full  block ">Calculate</button>
                 </div>
             </div>      
@@ -131,12 +138,12 @@
 
 
 
-            <div class=" cards text-center p-5 shadow rounded-lg">
+            <div class=" cards text-center p-2 shadow rounded-lg">
                 <div><img class="block mx-auto" src="images/pentagon.png" alt="">
                 </div>
                 <div class="">
                     <div>
-                        <h2 class="text-3xl pt-2 fw-bold">Pentagon</h2>
+                        <h2 id="pentagon-tittle" class="text-3xl pt-2 fw-bold">Pentagon</h2>
                     </div>
                     <div>
                         <p class="text-2xl pb-2">Area (A) = 0.5 * p * b </p>
@@ -155,13 +162,13 @@
 
                                    <!-- ellipse -->
 
-                                   
-            <div class=" cards text-center p-5 shadow rounded-lg">
+
+            <div class=" cards text-center p-2 shadow rounded-lg">
                 <div><img class="block mx-auto" src="images/ellipse.png" alt="">
                 </div>
                 <div class="">
                     <div>
-                        <h2 class="text-3xl pt-2 fw-bold">Ellipse</h2>
+                        <h2 id="ellipse-tittle" class="text-3xl pt-2 fw-bold">Ellipse</h2>
                     </div>
                     <div>
                         <p class="text-2xl pb-2">Area (A) = &pi; * ab</p>
@@ -184,13 +191,13 @@
         <!-- table section start -->
 
 
-        <section class="mx-auto basis-1/3 mt-5 ml-5">
-            <h1 class="text-3xl text-center font-semibold underline ">Area Calculation</h1>
+        <section class="mx-auto w-1/3 mt-5 ml-5">
+            <h1 class="text-3xl text-center font-semibold "></h1>
             <div id="outputResult" class=" shadow rounded-lg box-border h-1/3 ">
                 <div class="overflow-x-auto mt-3">
                     <table class="table w-full">
-                        <thead>
-                            <tr>
+                        <thead class="">
+                            <tr >
                                 <th>No.</th>
                                 <th>Name</th>
                                 <th>Result</th>
