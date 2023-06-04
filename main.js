@@ -1,4 +1,4 @@
-/* function calculate (){
+function calculate (){
     const getInputNumberField1 = document.getElementById('input-field1')
     const inputValuerectangle = getInputNumberField1.value;
 
@@ -16,7 +16,7 @@
 document.getElementById('rectangle-button').addEventListener('click', function () {
     calculate ()
     // console.log(inputValue);
-}) */
+})
 
 
 
@@ -33,13 +33,23 @@ document.getElementById('rectangle-button').addEventListener('click', function (
     return color;
   }
   
-  
-  // random color execute on card
   const getAllCard = document.querySelectorAll(".cards");
   for(const getCards of getAllCard)
   getCards.addEventListener('mouseover',function(){
       getCards.style.backgroundColor =randomBackgroundColor();
   })
 
-  // create table data function
+// table function
+function addData(elementName,Area){
+  const calculationArea = document.getElementById('table-body');
+  const createTable = document.createElement("tr");
+  
+  createTable.innerHTML = `
+  <td>${serial}.</td>
+  <td>${elementName}</td>
+  <td>${Area}cm<sup>2</sup></td>
+  <td><button class="btn btn-sm">Convert to m<sup>2</sup></button></td>
+  `
+   calculationArea.appendChild(createTable)
+  }
 
